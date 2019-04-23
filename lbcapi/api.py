@@ -3,7 +3,7 @@ import hashlib
 import hmac as hmac_lib
 import requests
 import time
-import urlparse
+from urllib.parse import urlparse
 
 
 def oauth2(access_token, client_id, client_secret=None, refresh_token=None, expires_at=None, server='https://localbitcoins.com'):
